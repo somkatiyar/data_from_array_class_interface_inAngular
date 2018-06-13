@@ -1,0 +1,36 @@
+<html>
+    <head>
+          <title>datbyclass</title>
+
+          <script>
+
+          </script>
+    </head>
+
+
+
+    <body>
+        <h1>Data By Array</h1>
+
+      <div>
+        <!-- dive for the profile -->
+          <div class="profileContainer" *ngFor="let x of users;let index = index;let odd = odd;let even = even;let last=last;let first=first" (click)="getObject(x)" >
+              <div class="profile" >
+                 <img src="{{x.image}}" />
+               </div>
+          <!-- div for the profilr text   -->
+            <div class="profileText" >
+
+              <!-- value access with reference variable of type array -->
+              <label>  {{x.name}} </label>
+              <label>  {{x.status}} </label>
+            </div>
+
+          </div>
+
+
+      </div>
+
+    </body>
+
+</html>

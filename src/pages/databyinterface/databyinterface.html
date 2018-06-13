@@ -1,0 +1,35 @@
+<html>
+    <head>
+          <title>datbyclass</title>
+
+          <script>
+
+          </script>
+    </head>
+
+    <body>
+      <h1>Data By Interface</h1>
+
+      <div>
+        <!-- profile div -->
+          <div class="profileContainer" *ngFor="let x of users;let index = index;let odd = odd;let even = even;let last=last;let first=first" >
+            <div class="profile" >
+              <img src="{{x.image}}" />
+            </div>
+
+            <!-- profile text div -->
+            <div class="profileText" >
+
+              <label>  {{x.name}} </label>
+              <label>  {{x.status}} </label>
+
+            </div>
+      </div>
+
+
+
+      </div>
+
+    </body>
+
+</html>
